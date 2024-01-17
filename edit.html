@@ -1,0 +1,45 @@
+<!-- edit.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Edit Student Record</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Edit Student Record</h1>
+      <form id="editForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" required />
+
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" required />
+
+        <button type="button" onclick="updateStudent()">Update</button>
+      </form>
+      <br />
+      <a href="index.html">Enter New Record</a>
+      <br> <br>
+      <a href="display.html">View All Records</a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const editStudentData = JSON.parse(localStorage.getItem("editStudent"));
+
+        if (editStudentData) {
+          document.getElementById("name").value = editStudentData.name;
+          document.getElementById("age").value = editStudentData.age;
+          document.getElementById("grade").value = editStudentData.grade;
+        }
+      });
+    </script>
+  </body>
+</html>

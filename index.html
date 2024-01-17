@@ -1,0 +1,32 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Registration System</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Student Registration System</h1>
+      <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" required />
+
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" required />
+
+        <button type="button" id="liveAlertBtn" onclick="addStudent()">Add Student</button>
+      </form>
+      <br />
+      <input type="button" id="displayButton" value="View All Records" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

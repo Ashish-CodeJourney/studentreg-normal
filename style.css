@@ -1,0 +1,40 @@
+/* style.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0c0c0c; 
+  color: #1a1aff
+  ;
+  background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Add your background image path */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); 
+
+form {
+  display: grid;
+  grid-gap: 20px;
+}
+
+button {
+  padding: 15px;
+  background-color: #6c5ce7; 
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #4834d4; 
+}
